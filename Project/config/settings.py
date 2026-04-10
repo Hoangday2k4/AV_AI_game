@@ -1,0 +1,14 @@
+WIDTH = 1200
+HEIGHT = 700
+
+FPS = 30
+
+# camera chiếm 20%
+CAMERA_WIDTH = int(WIDTH * 0.2)
+
+# game chiếm 80%
+GAME_WIDTH = WIDTH - CAMERA_WIDTH
+
+PLAYER_SPEED = 4
+JUMP_FORCE = -13
+GRAVITY = 1.5
