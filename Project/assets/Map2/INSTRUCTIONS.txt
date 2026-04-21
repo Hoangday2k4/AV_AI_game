@@ -1,0 +1,15 @@
+Hi there!
+
+This export is a raw TMX package.
+
+1. Extract the zip file content
+2. Open map.tmx in Tiled or your engine TMX importer
+3. Keep spritesheet.png next to map.tmx, or update the tileset image path
+
+Done!
+
+If you need help, ask on Discord: https://discord.gg/8sCEAspmBV
+
+Have fun building your game!
+
+Hugo from www.spritefusion.com

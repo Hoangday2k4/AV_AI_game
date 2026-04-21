@@ -1,5 +1,7 @@
-import pygame
+﻿import pygame
+
 from config.settings import *
+
 
 class Engine:
 
@@ -7,7 +9,10 @@ class Engine:
 
         pygame.init()
 
-        self.screen = pygame.display.set_mode((WIDTH,HEIGHT))
+        self.screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+        pygame.display.set_caption("Forest Temple")
+
+        self.width, self.height = self.screen.get_size()
         self.clock = pygame.time.Clock()
 
     def tick(self):

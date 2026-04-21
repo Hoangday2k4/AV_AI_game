@@ -1,4 +1,4 @@
-import pygame
+﻿import pygame
 import os
 import re
 
@@ -68,8 +68,9 @@ class PlayerModel:
 
     def load_sprites(self):
         """Load sprite images from Player/ subfolders."""
-        # Use absolute hardcoded paths
-        base_path = "D:\\K2_N4\\AV_AI\\Player"
+        # Resolve Player folder from current project root (no hardcoded machine path).
+        project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        base_path = os.path.join(project_root, "Player")
 
         if not os.path.exists(base_path):
             self.current_sprite = None
